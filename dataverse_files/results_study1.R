@@ -47,7 +47,7 @@ jit=.1 							#adds space to separate the points in the plot
 
 
 # Build plot (Figure 2)
-#png('naivecurves-budget.png',width=5,height=4,units="in",res=1800)
+png('naivecurves-budget.png',width=5,height=4,units="in",res=1800)
 
 plot(x,biMean[,1],ylim=c(.5,.7),xlim=c(0,max(x)),xaxt='n',yaxt='n',ylab=NA,xlab=NA)
 lines(x,biMean[,1])
@@ -64,7 +64,7 @@ axis(2,at=seq(0,1,.01),labels=NA,tck=-0.015)
 mtext(2,text='Perception of budget deficit',padj=-5,cex=tt)
 legend('bottomright',legend=c('Government identifiers','Opposition identifiers'),cex=tt,bty='n',pch=21,pt.bg=c('white','black'))
 
-#dev.off()
+dev.off()
 
 ##################################
 # REPRODUCE RESULTS IN TABLE 1	

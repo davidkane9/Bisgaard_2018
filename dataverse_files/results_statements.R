@@ -33,7 +33,7 @@ out_total<-aggregate(code_total~month,data=statement,mean)			#aggregate result b
 ###############
 # Reproduce Figure 1
 
-#png("PMstatement.png",width=5,height=4,units="in",res=1600)
+png("PMstatement.png",width=5,height=4,units="in",res=1600)
 
 par(omd=c(.05,1,0,1),mfrow=c(1,1))	#set plotting region
 x=out_total[,2]		#set vector to be plotted
@@ -50,7 +50,7 @@ text(x=3,y=.6,label="Restoration Act",cex=.8)
 arrows(4,.575,4.85,.425,length=0.1)
 axis(1,at=1:5,labels=c("Jan\n(N=54)","Feb\n(34)","Mar\n(16)","Apr\n(44)","May\n(25)"),padj=.5)
 
-#dev.off()
+dev.off()
 ####
 # END
 

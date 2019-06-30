@@ -68,7 +68,7 @@ sqrt(vcov(fitU2)[1,1]),sqrt(vcov(fitU2)[1,1]+vcov(fitU2)[2,2]+2*vcov(fitU2)[1,2]
 
 
 #graphing results (produces Figure 4 in the paper)
-#png('graph_study2.png',height=4,width=9,units="in",res=1800)
+png('graph_study2.png',height=4,width=9,units="in",res=1800)
 
 x=1:2+.035		 #set space so points do not overlap.
 par(mfrow=c(1,1),omd=c(0.05,.525,0,1))
@@ -109,7 +109,7 @@ axis(4,seq(0,1,.025),tck=-0.025,labels=NA)
 mtext(4,text="Perception of Unemployment",line=3)
 mtext(1,text="Treatment Condition",line=3)
 
-#dev.off()
+dev.off()
 
 ######
 # END
